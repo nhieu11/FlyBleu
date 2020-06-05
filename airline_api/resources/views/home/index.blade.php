@@ -145,14 +145,7 @@
                     <form action="#" id="search_form_1" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_item">
                             <div>destination</div>
-                            {{-- <input type="text" class="destination search_input" required="required"> --}}
-                            <select name="adults" id="adults_4" class="dropdown_item_select search_input">
-                                @foreach ($flights as $item)
-
-                                <option>{{ $item->name }}</option>
-
-                                @endforeach
-                            </select>
+                            <input type="text" class="destination search_input" required="required">
                         </div>
                         <div class="search_item">
                             <div>check in</div>
@@ -188,14 +181,7 @@
                     <form action="#" id="search_form_2" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_item">
                             <div>destination</div>
-                            {{-- <input type="text" class="destination search_input" required="required"> --}}
-                            <select name="adults" id="adults_4" class="dropdown_item_select search_input">
-                                @foreach ($flights as $item)
-
-                                <option>{{ $item->name }}</option>
-
-                                @endforeach
-                            </select>
+                            <input type="text" class="destination search_input" required="required">
                         </div>
                         <div class="search_item">
                             <div>check in</div>
@@ -231,14 +217,7 @@
                     <form action="#" id="search_form_3" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_item">
                             <div>destination</div>
-                            {{-- <input type="text" class="destination search_input" required="required"> --}}
-                            <select name="adults" id="adults_4" class="dropdown_item_select search_input">
-                                @foreach ($flights as $item)
-
-                                <option>{{ $item->name }}</option>
-
-                                @endforeach
-                            </select>
+                            <input type="text" class="destination search_input" required="required">
                         </div>
                         <div class="search_item">
                             <div>check in</div>
@@ -274,14 +253,7 @@
                     <form action="#" id="search_form_4" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_item">
                             <div>destination</div>
-                            {{-- <input type="text" class="destination search_input" required="required"> --}}
-                            <select name="adults" id="adults_4" class="dropdown_item_select search_input">
-                                @foreach ($flights as $item)
-
-                                <option>{{ $item->name }}</option>
-
-                                @endforeach
-                            </select>
+                            <input type="text" class="destination search_input" required="required">
                         </div>
                         <div class="search_item">
                             <div>check in</div>
@@ -317,16 +289,7 @@
                     <form action="#" id="search_form_5" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_item">
                             <div>destination</div>
-                            {{-- <input type="text" class="destination search_input" required="required"> --}}
-                            <select name="adults" id="adults_4" class="dropdown_item_select search_input">
-                                @foreach ($flights as $item)
-
-                                <option>{{ $item->name }}</option>
-
-                                @endforeach
-
-
-                            </select>
+                            <input type="text" class="destination search_input" required="required">
                         </div>
                         <div class="search_item">
                             <div>check in</div>
@@ -362,14 +325,7 @@
                     <form action="#" id="search_form_6" class="search_panel_content d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
                         <div class="search_item">
                             <div>destination</div>
-                            {{-- <input type="text" class="destination search_input" required="required"> --}}
-                            <select name="adults" id="adults_4" class="dropdown_item_select search_input">
-                                @foreach ($flights as $item)
-
-                                <option>{{ $item->name }}</option>
-
-                                @endforeach
-                            </select>
+                            <input type="text" class="destination search_input" required="required">
                         </div>
                         <div class="search_item">
                             <div>check in</div>
@@ -422,7 +378,7 @@
         <div class="row intro_items">
 
             <!-- Intro Item -->
-            {{-- @foreach ($hotel->slice(0,3) as $item)
+            @foreach ($hotel->slice(0,3) as $item)
 
             <div class="col-lg-4 intro_col">
                 <div class="intro_item">
@@ -446,8 +402,56 @@
                     </div>
                 </div>
             </div>
-            @endforeach --}}
+            @endforeach
+            {{--  <!-- Intro Item -->
 
+            <div class="col-lg-4 intro_col">
+                <div class="intro_item">
+                    <div class="intro_item_overlay"></div>
+                    <!-- Image by https://unsplash.com/@hellolightbulb -->
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_2.jpg)"></div>
+                    <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+                        <div class="intro_date">May 25th - June 01st</div>
+                        <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
+                        <div class="intro_center text-center">
+                            <h1>Greece</h1>
+                            <div class="intro_price">From $1450</div>
+                            <div class="rating rating_4">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intro Item -->
+
+            <div class="col-lg-4 intro_col">
+                <div class="intro_item">
+                    <div class="intro_item_overlay"></div>
+                    <!-- Image by https://unsplash.com/@willianjusten -->
+                    <div class="intro_item_background" style="background-image:url(/assets/client/images/intro_3.jpg)"></div>
+                    <div class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+                        <div class="intro_date">May 25th - June 01st</div>
+                        <div class="button intro_button"><div class="button_bcg"></div><a href="#">see more<span></span><span></span><span></span></a></div>
+                        <div class="intro_center text-center">
+                            <h1>Scotland</h1>
+                            <div class="intro_price">From $1450</div>
+                            <div class="rating rating_4">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  --}}
 
         </div>
     </div>
@@ -467,7 +471,7 @@
 
                 <div class="cta_slider_container">
                     <div class="owl-carousel owl-theme cta_slider">
-                        {{-- @foreach ($hotel->slice(0,4) as $item)
+                        @foreach ($hotel->slice(0,4) as $item)
                         <!-- CTA Slider Item -->
                         <div class="owl-item cta_item text-center">
                             <div class="cta_title">{{ $item->name }}</div>
@@ -481,9 +485,34 @@
                             <p class="cta_text">{{ $item->detail }}</p>
                             <div class="button cta_button"><div class="button_bcg"></div><a href="/{{ $item->id }}/single_listing">book now<span></span><span></span><span></span></a></div>
                         </div>
-                        @endforeach --}}
+                        @endforeach
                         <!-- CTA Slider Item -->
+                        {{-- <div class="owl-item cta_item text-center">
+                            <div class="cta_title">maldives deluxe package</div>
+                            <div class="rating_r rating_r_4">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
+                            <div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
+                        </div>
 
+                        <!-- CTA Slider Item -->
+                        <div class="owl-item cta_item text-center">
+                            <div class="cta_title">maldives deluxe package</div>
+                            <div class="rating_r rating_r_4">
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            <p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
+                            <div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
+                        </div> --}}
 
                     </div>
 
@@ -541,7 +570,7 @@
             </div>
         </div>
         <div class="row offers_items">
-            {{-- @foreach ($hotel->slice(0,4) as $item)
+            @foreach ($hotel->slice(0,4) as $item)
             <!-- Offers Item -->
             <div class="col-lg-6 offers_col">
                 <div class="offers_item">
@@ -578,15 +607,124 @@
                     </div>
                 </div>
             </div>
-            @endforeach --}}
+            @endforeach
+            {{-- <!-- Offers Item -->
+            <div class="col-lg-6 offers_col">
+                <div class="offers_item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="offers_image_container">
+                                <!-- Image by Egzon Bytyqi -->
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_2.jpg)"></div>
+                                <div class="offer_name"><a href="#">turkey hills</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="offers_content">
+                                <div class="offers_price">$50<span>per night</span></div>
+                                <div class="rating_r rating_r_4 offers_rating">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                                <div class="offers_icons">
+                                    <ul class="offers_icons_list">
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="offers_link"><a href="offers.html">read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Offers Item -->
+            <div class="col-lg-6 offers_col">
+                <div class="offers_item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="offers_image_container">
+                                <!-- Image by https://unsplash.com/@nevenkrcmarek -->
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_3.jpg)"></div>
+                                <div class="offer_name"><a href="#">island dream</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="offers_content">
+                                <div class="offers_price">$90<span>per night</span></div>
+                                <div class="rating_r rating_r_4 offers_rating">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                                <div class="offers_icons">
+                                    <ul class="offers_icons_list">
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="offers_link"><a href="offers.html">read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offers Item -->
+            <div class="col-lg-6 offers_col">
+                <div class="offers_item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="offers_image_container">
+                                <!-- Image by https://unsplash.com/@mantashesthaven -->
+                                <div class="offers_image_background" style="background-image:url(/assets/client/images/offer_4.jpg)"></div>
+                                <div class="offer_name"><a href="#">travel light</a></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="offers_content">
+                                <div class="offers_price">$30<span>per night</span></div>
+                                <div class="rating_r rating_r_4 offers_rating">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="offers_text">Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor.</p>
+                                <div class="offers_icons">
+                                    <ul class="offers_icons_list">
+                                        <li class="offers_icons_item"><img src="/assets/client/images/post.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/compass.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/bicycle.png" alt=""></li>
+                                        <li class="offers_icons_item"><img src="/assets/client/images/sailboat.png" alt=""></li>
+                                    </ul>
+                                </div>
+                                <div class="offers_link"><a href="offers.html">read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    --}}
 
         </div>
     </div>
 </div>
 
 <!-- Testimonials -->
-
+{{--  @foreach ($comment->slice(0,7) as $item)  --}}
 
 
 <div class="testimonials">
@@ -606,7 +744,7 @@
                     <div class="owl-carousel owl-theme test_slider">
 
                         <!-- Testimonial Item -->
-                        {{-- @foreach ($comments as $item)
+                        @foreach ($comments as $item)
                         <div class="owl-item">
                             <div class="test_item">
                                 <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt="https://unsplash.com/@anniegray"></div>
@@ -619,7 +757,7 @@
                                         </div>
                                         @endforeach
 
-
+                                        {{-- <div class="test_date">{{ $cm->commenttime }}</div> --}}
                                         <div class="test_quote_title">{{ $item->detail }}</div>
                                         <p class="test_quote_text">{{ $item->commenttime }}</p>
 
@@ -628,8 +766,96 @@
                                 </div>
                             </div>
                         </div>
-                        @endforeach --}}
+                        @endforeach
+                        {{--  <!-- Testimonial Item -->
+                        <div class="owl-item">
+                            <div class="test_item">
+                                <div class="test_image"><img src="/assets/client/images/test_2.jpg" alt="https://unsplash.com/@tschax"></div>
+                                <div class="test_icon"><img src="/assets/client/images/island_t.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">carla smith</div>
+                                            <div class="test_date">May 24, 2017</div>
+                                        </div>
+                                        <div class="test_quote_title">" Best holliday ever "</div>
+                                        <p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Testimonial Item -->
+                        <div class="owl-item">
+                            <div class="test_item">
+                                <div class="test_image"><img src="/assets/client/images/test_3.jpg" alt="https://unsplash.com/@seefromthesky"></div>
+                                <div class="test_icon"><img src="/assets/client/images/kayak.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">carla smith</div>
+                                            <div class="test_date">May 24, 2017</div>
+                                        </div>
+                                        <div class="test_quote_title">" Best holliday ever "</div>
+                                        <p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Item -->
+                        <div class="owl-item">
+                            <div class="test_item">
+                                <div class="test_image"><img src="/assets/client/images/test_2.jpg" alt=""></div>
+                                <div class="test_icon"><img src="/assets/client/images/island_t.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">carla smith</div>
+                                            <div class="test_date">May 24, 2017</div>
+                                        </div>
+                                        <div class="test_quote_title">" Best holliday ever "</div>
+                                        <p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Item -->
+                        <div class="owl-item">
+                            <div class="test_item">
+                                <div class="test_image"><img src="/assets/client/images/test_1.jpg" alt=""></div>
+                                <div class="test_icon"><img src="/assets/client/images/backpack.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">carla smith</div>
+                                            <div class="test_date">May 24, 2017</div>
+                                        </div>
+                                        <div class="test_quote_title">" Best holliday ever "</div>
+                                        <p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial Item -->
+                        <div class="owl-item">
+                            <div class="test_item">
+                                <div class="test_image"><img src="/assets/client/images/test_3.jpg" alt=""></div>
+                                <div class="test_icon"><img src="/assets/client/images/kayak.png" alt=""></div>
+                                <div class="test_content_container">
+                                    <div class="test_content">
+                                        <div class="test_item_info">
+                                            <div class="test_name">carla smith</div>
+                                            <div class="test_date">May 24, 2017</div>
+                                        </div>
+                                        <div class="test_quote_title">" Best holliday ever "</div>
+                                        <p class="test_quote_text">Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  --}}
 
                     </div>
 
@@ -687,7 +913,7 @@
         <div class="row trending_container">
 
             <!-- Trending Item -->
-            {{-- @foreach ($hotel->slice(0,4) as $item)
+            @foreach ($hotel->slice(0,4) as $item)
 
 
             <div class="col-lg-3 col-sm-6">
@@ -700,8 +926,90 @@
                     </div>
                 </div>
             </div>
-            @endforeach --}}
+            @endforeach
+            {{--  <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_2.png" alt="https://unsplash.com/@grovemade"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">mars hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_3.png" alt="https://unsplash.com/@jbriscoe"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">queen hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_4.png" alt="https://unsplash.com/@oowgnuj"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">mars hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_5.png" alt="https://unsplash.com/@mindaugas"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">grand hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_6.png" alt="https://unsplash.com/@itsnwa"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">mars hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_7.png" alt="https://unsplash.com/@rktkn"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">queen hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Item -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="trending_item clearfix">
+                    <div class="trending_image"><img src="/assets/client/images/trend_8.png" alt="https://unsplash.com/@thoughtcatalog"></div>
+                    <div class="trending_content">
+                        <div class="trending_title"><a href="#">mars hotel</a></div>
+                        <div class="trending_price">From $182</div>
+                        <div class="trending_location">madrid, spain</div>
+                    </div>
+                </div>
+            </div>  --}}
 
         </div>
     </div>
