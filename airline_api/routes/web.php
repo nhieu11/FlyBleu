@@ -13,7 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
+=======
+Route::get('/', function () {
+    return view('welcome');
+});
+>>>>>>> parent of 625ce21... Revert "Revert "update""
