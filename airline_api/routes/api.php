@@ -17,4 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('name', 'Api\GetController@get');
+Route::group([
+    'prefix' => '',
+    'namespace' =>'Api'
+], function () {
+    Route::get('airline ', 'GetController@get');
+});
+
