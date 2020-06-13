@@ -15,7 +15,7 @@ class HistoryController extends Controller
      */
     public function index()
     {
-        return history::where('code_trade','like','flyblue%')->get();
+        return history::where('code_trade','like','banking%')->get();
     }
 
     /**
