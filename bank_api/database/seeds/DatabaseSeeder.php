@@ -11,6 +11,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UserSeeder::class);
+        DB::table('accounts')->insert([
+            [
+                'name'=> 'Bùi Ngọc Hiếu',
+                'acc_num' => '0904515270',
+                'password' => '123456',
+                'balance' => '500000000'
+            ],
+        ]);
     }
 }

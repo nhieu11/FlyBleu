@@ -1,100 +1,88 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html>
 
-        <title>Laravel</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <base href="/">
+	<link href="assets/admin/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/admin/css/datepicker3.css" rel="stylesheet">
+	<link href="assets/admin/css/styles.css" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+	<!--[if lt IE 9]>
+<script src="assets/admin/js/html5shiv.js"></script>
+<script src="assets/admin/js/respond.min.js"></script>
+<![endif]-->
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
+</head>
 
-            .full-height {
-                height: 100vh;
-            }
+<body>
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<div class="login-panel panel panel-default">
+                <div class="panel-heading">THANH TOÁN</div>
 
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
+                @if (session("thongbao"))
+                <div class="alert alert-danger" role="alert">
+                    <strong>{{ session("thongbao") }}</strong>
                 </div>
-            @endif
+                @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
+                @if ($errors->any())
+                @component('admin.layouts.components.alert')
+                @slot('type', 'danger')
+                @slot('stroke', 'cancel')
+                {{ $errors->first() }}
+                @endcomponent
+                @endif
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
-        </div>
-    </body>
+				<div class="panel-body">
+					<form method="POST" action="/payment">
+						@csrf
+						<fieldset>
+							<div class="form-group">
+							<input class="form-control" placeholder="Số tài khoản" name="acc_num" type="text" autofocus="" >
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Mật khẩu" name="password" type="password" >
+                            </div>
+                            <div class="form-group">
+								<input class="form-control" placeholder="Số tiền" name="amount" type="text" >
+							</div>
+							<button type="submit" class="btn btn-primary">Thanh toán</button>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /.col-->
+	</div><!-- /.row -->
+
+
+
+	<script src="assets/admin/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/admin/js/bootstrap.min.js"></script>
+	<script src="assets/admin/js/chart.min.js"></script>
+	<script src="assets/admin/js/chart-data.js"></script>
+	<script src="assets/admin/js/easypiechart.js"></script>
+	<script src="assets/admin/js/easypiechart-data.js"></script>
+	<script src="assets/admin/js/bootstrap-datepicker.js"></script>
+	<script>
+		! function ($) {
+			$(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+				$(this).find('em:first').toggleClass("glyphicon-minus");
+			});
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+			if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+			if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+</body>
+
 </html>

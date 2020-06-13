@@ -15,4 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+})->name('/');
+
+
+Route::post('payment','Controller@payment');
+
+Route::middleware(['api', 'cors'])->group(function () {
+    Route::resource('/history', 'Api\HistoryController');
 });
+
+
