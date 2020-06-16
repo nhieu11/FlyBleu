@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route::post('try', function (){
+//     // return response()->json([
+//     //     'message' => 'nice'
+//     // ],200);
+//     dd($request);
+// });
